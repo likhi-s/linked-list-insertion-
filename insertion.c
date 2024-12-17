@@ -3,8 +3,9 @@
 #include<stdbool.h>
 #include "insertion.h"
 
-node *head = NULL;
-node *temp, *newnode;
+
+extern node *head;
+extern node *temp, *newnode;
 void insertionMenu()
 {
     int choice;
@@ -41,6 +42,7 @@ void insertionMenu()
             break;
         default:
             printf("Invalid choice,try again\n");
+            break;
         }
     }
 }

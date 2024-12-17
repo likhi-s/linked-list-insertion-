@@ -7,13 +7,17 @@ typedef struct node
     struct node* next;
 }node ;
 
-enum linkedlist
+
+
+
+enum insertion
 {
     CREATE_LIST=1,DISPLAY_lIST,INSERT_AT_BEGINNING,INSERT_AT_END,INSERT_AT_SPECIFIC_LOCATION,INSERT_AFTER_SPECIFIC_LOCATION,EXIT
 };
 
 void insertionMenu();
 void displayList();
+void insertAtBeginning();
 void insertAtEnd();
 void insertAtSpecificPosition();
 void insertAfterSpecificPosition();
