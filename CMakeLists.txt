@@ -2,7 +2,9 @@ cmake_minimum_required(VERSION 3.16)
 
 project(Linkedlist_task LANGUAGES C)
 
-add_executable(Linkedlist_task main.c)
+add_executable(Linkedlist_task main.c
+    insertion.h
+    insertion.c)
 
 include(GNUInstallDirs)
 install(TARGETS Linkedlist_task
